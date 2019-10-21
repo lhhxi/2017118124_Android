@@ -82,8 +82,9 @@ public class Hello1 extends AppCompatActivity implements View.OnClickListener {
             startActivity(intent);
             */
 
-            //使用隐式Intent调用系统拨号界面
-            intent=new Intent(Intent.ACTION_DIAL);
+            //使用隐式Intent调用地图（根据经纬度打开地图显示）
+            intent=new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("geo:47.6,-122.3"));
             startActivity(intent);
         }
     }

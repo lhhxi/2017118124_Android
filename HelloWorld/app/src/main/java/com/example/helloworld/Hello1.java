@@ -1,6 +1,7 @@
 package com.example.helloworld;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -70,9 +71,21 @@ public class Hello1 extends AppCompatActivity implements View.OnClickListener {
             startActivity(intent);
         }
         if(view.getId()==R.id.bttoHello3){
-            //构造出Intent的意图（传入this作为上下文，传入Hello2.class作为目标活动）
+
+            /*//构造出Intent的意图（传入this作为上下文，传入Hello2.class作为目标活动）
+            //显式意图
             intent=new Intent(this,Hello3.class);  //即在Hello1这个活动的基础上打开Hello2活动
             startActivity(intent);
+            //隐含意图（隐含意图包括动作，数据，附加数据，所属类别四类）
+            String string1="android.intent.action.MAIN";
+            intent = new Intent(string1);
+            startActivity(intent);
+            */
+
+             //通过外部连接打开浏览器
+             intent=new Intent(Intent.ACTION_VIEW);
+             intent.setData(Uri.parse("http://www.hstc.edu.cn"));
+             startActivity(intent);
         }
     }
 

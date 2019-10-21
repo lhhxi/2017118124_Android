@@ -82,10 +82,9 @@ public class Hello1 extends AppCompatActivity implements View.OnClickListener {
             startActivity(intent);
             */
 
-             //通过外部连接打开浏览器
-             intent=new Intent(Intent.ACTION_VIEW);
-             intent.setData(Uri.parse("http://www.hstc.edu.cn"));
-             startActivity(intent);
+            //使用隐式Intent调用系统拨号界面
+            intent=new Intent(Intent.ACTION_DIAL);
+            startActivity(intent);
         }
     }
 

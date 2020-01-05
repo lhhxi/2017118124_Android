@@ -7,3 +7,5 @@
       内容：三个活动的启动模式
 ### 3.master主分支的AndroidStudioProjects项目
       内容：实现水果列表的增删查改（目前查和改还未能实现）
+### 4.master主分支的Multithreading项目
+      内容：用多进程实现文本从1开始1s+1，点击stop按钮停止

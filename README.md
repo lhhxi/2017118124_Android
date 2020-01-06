@@ -9,3 +9,6 @@
       内容：实现水果列表的增删查改（目前查和改还未能实现）
 ### 4.master主分支的Multithreading项目
       内容：用多进程实现文本从1开始1s+1，点击stop按钮停止
+### 5.master主分支的AsyncTask项目
+      内容：用异步任务AsyncTask实现的一个实例
+      
